@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_universes"
+            android:icon="@drawable/ic_public_black_24dp"
+            android:title="Universes" />
+        <item
+            android:id="@+id/nav_characters"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Characters" />
+        <item
+            android:id="@+id/nav_locations"
+            android:icon="@drawable/ic_terrain_black_24dp"
+            android:title="Locations" />
+        <item
+            android:id="@+id/nav_items"
+            android:icon="@drawable/ic_colorize_black_24dp"
+            android:title="Items" />
+    </group>
+
+    <item android:title="Extended Pages">
+        <menu>
+            <item
+                android:id="@+id/nav_creatures"
+                android:icon="@drawable/ic_pets_black_24dp"
+                android:title="Creatures" />
+            <item
+                android:id="@+id/nav_races"
+                android:icon="@drawable/ic_face_black_24dp"
+                android:title="Races" />
+            <item
+                android:id="@+id/nav_religions"
+                android:icon="@drawable/ic_brightness_7_black_24dp"
+                android:title="Religions" />
+            <item
+                android:id="@+id/nav_groups"
+                android:icon="@drawable/ic_wc_black_24dp"
+                android:title="Groups" />
+            <item
+                android:id="@+id/nav_magics"
+                android:icon="@drawable/ic_flash_on_black_24dp"
+                android:title="Magics" />
+            <item
+                android:id="@+id/nav_languages"
+                android:icon="@drawable/ic_forum_black_24dp"
+                android:title="Languages" />
+        </menu>
+    </item>
+    <item android:title="Collective Pages">
+        <menu>
+            <item
+                android:id="@+id/nav_scenes"
+                android:icon="@drawable/ic_local_movies_black_24dp"
+                android:title="Scenes" />
+            </menu>
+    </item>
+
+</menu>
