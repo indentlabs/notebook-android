@@ -4,19 +4,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_universes"
-            android:icon="@drawable/ic_public_black_24dp"
+            android:icon="@drawable/ic_public_purple_24"
             android:title="Universes" />
         <item
             android:id="@+id/nav_characters"
-            android:icon="@drawable/ic_people_black_24dp"
+            android:icon="@drawable/ic_people_red_24"
             android:title="Characters" />
         <item
             android:id="@+id/nav_locations"
-            android:icon="@drawable/ic_terrain_black_24dp"
+            android:icon="@drawable/ic_terrain_green_24"
             android:title="Locations" />
         <item
             android:id="@+id/nav_items"
-            android:icon="@drawable/ic_colorize_black_24dp"
+            android:icon="@drawable/ic_beach_access_orange_24"
             android:title="Items" />
     </group>
 
@@ -24,27 +24,27 @@
         <menu>
             <item
                 android:id="@+id/nav_creatures"
-                android:icon="@drawable/ic_pets_black_24dp"
+                android:icon="@drawable/ic_pets_brown_24"
                 android:title="Creatures" />
             <item
                 android:id="@+id/nav_races"
-                android:icon="@drawable/ic_face_black_24dp"
+                android:icon="@drawable/ic_face_light_green_24"
                 android:title="Races" />
             <item
                 android:id="@+id/nav_religions"
-                android:icon="@drawable/ic_brightness_7_black_24dp"
+                android:icon="@drawable/ic_brightness_7_yellow_24"
                 android:title="Religions" />
             <item
                 android:id="@+id/nav_groups"
-                android:icon="@drawable/ic_wc_black_24dp"
+                android:icon="@drawable/ic_wc_blue_24"
                 android:title="Groups" />
             <item
                 android:id="@+id/nav_magics"
-                android:icon="@drawable/ic_flash_on_black_24dp"
+                android:icon="@drawable/ic_flash_on_orange_24"
                 android:title="Magics" />
             <item
                 android:id="@+id/nav_languages"
-                android:icon="@drawable/ic_forum_black_24dp"
+                android:icon="@drawable/ic_forum_blue_24"
                 android:title="Languages" />
         </menu>
     </item>
@@ -52,7 +52,7 @@
         <menu>
             <item
                 android:id="@+id/nav_scenes"
-                android:icon="@drawable/ic_local_movies_black_24dp"
+                android:icon="@drawable/ic_local_movies_grey_24"
                 android:title="Scenes" />
             </menu>
     </item>
