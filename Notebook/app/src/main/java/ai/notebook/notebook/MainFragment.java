@@ -32,6 +32,8 @@ public class MainFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    RecyclerView rvMenuItems;
+
     private OnFragmentInteractionListener mListener;
 
     public MainFragment() {
@@ -71,32 +73,24 @@ public class MainFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
+        rvMenuItems = (RecyclerView) view.findViewById(R.id.mainMenuList);
 
+        // Create an ArrayList that holds messages
+        final ArrayList<MainMenuItem> menuItemList = new ArrayList<MainMenuItem>();
+
+
+        menuItemList.add(new MainMenuItem("James", R.drawable.ic_beach_access_orange_24));
+        menuItemList.add(new MainMenuItem("Sally", R.drawable.ic_beach_access_orange_24));
+
+            MainMenuAdapter adapter = new MainMenuAdapter(this.getContext(), menuItemList);
+
+            rvMenuItems.setAdapter(adapter);
+
+        rvMenuItems.setLayoutManager(new LinearLayoutManager(this.getContext()));
 
         return view;
     }
 
-    public class UserListActivity extends AppCompatActivity {
-
-        ArrayList<MainMenuItem> menuItems;
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            // ...
-            // Lookup the recyclerview in activity layout
-            RecyclerView rvMenuItems = (RecyclerView) findViewById(R.id.mainMenuList);
-
-// This will require some editing
-            // Create adapter passing in the sample user data
-//            MainMenuAdapter adapter = new MainMenuAdapter(this, contacts);
-
-            // Attach the adapter to the recyclerview to populate items
-//            rvMenuItems.setAdapter(adapter);
-            // Set layout manager to position the items
-            rvMenuItems.setLayoutManager(new LinearLayoutManager(this));
-            // That's all!
-        }
-    }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
