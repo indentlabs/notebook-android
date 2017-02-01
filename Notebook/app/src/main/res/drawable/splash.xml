@@ -8,6 +8,7 @@
         <bitmap
             android:gravity="center"
             android:src="@drawable/notebookbanner"/>
+
     </item>
 
 </layer-list>
