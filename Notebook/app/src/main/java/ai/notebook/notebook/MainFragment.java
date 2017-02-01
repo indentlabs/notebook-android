@@ -79,8 +79,18 @@ public class MainFragment extends Fragment {
         final ArrayList<MainMenuItem> menuItemList = new ArrayList<MainMenuItem>();
 
 
-        menuItemList.add(new MainMenuItem("James", R.drawable.ic_beach_access_orange_24));
-        menuItemList.add(new MainMenuItem("Sally", R.drawable.ic_beach_access_orange_24));
+        menuItemList.add(new MainMenuItem("Universes", R.drawable.universeheader));
+        menuItemList.add(new MainMenuItem("Characters", R.drawable.characterheader));
+        menuItemList.add(new MainMenuItem("Locations", R.drawable.locationheader));
+        menuItemList.add(new MainMenuItem("Items", R.drawable.itemheader));
+        menuItemList.add(new MainMenuItem("Creatures", R.drawable.creatureheader));
+        menuItemList.add(new MainMenuItem("Races", R.drawable.raceheader));
+        menuItemList.add(new MainMenuItem("Religions", R.drawable.religionheader));
+        menuItemList.add(new MainMenuItem("Groups", R.drawable.groupheader));
+        menuItemList.add(new MainMenuItem("Magics", R.drawable.magicheader));
+        menuItemList.add(new MainMenuItem("Languages", R.drawable.languageheader));
+        menuItemList.add(new MainMenuItem("Scenes", R.drawable.sceneheader));
+
 
             MainMenuAdapter adapter = new MainMenuAdapter(this.getContext(), menuItemList);
 
