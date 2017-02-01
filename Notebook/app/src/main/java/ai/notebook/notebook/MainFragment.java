@@ -4,9 +4,14 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 
 /**
@@ -69,6 +74,28 @@ public class MainFragment extends Fragment {
 
 
         return view;
+    }
+
+    public class UserListActivity extends AppCompatActivity {
+
+        ArrayList<MainMenuItem> menuItems;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            // ...
+            // Lookup the recyclerview in activity layout
+            RecyclerView rvMenuItems = (RecyclerView) findViewById(R.id.mainMenuList);
+
+// This will require some editing
+            // Create adapter passing in the sample user data
+//            MainMenuAdapter adapter = new MainMenuAdapter(this, contacts);
+
+            // Attach the adapter to the recyclerview to populate items
+//            rvMenuItems.setAdapter(adapter);
+            // Set layout manager to position the items
+            rvMenuItems.setLayoutManager(new LinearLayoutManager(this));
+            // That's all!
+        }
     }
 
     // TODO: Rename method, update argument and hook method into UI event
