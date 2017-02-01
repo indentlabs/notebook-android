@@ -45,7 +45,7 @@ public class MainMenuAdapter extends
     private Context mContext;
 
     // Pass in the contact array into the constructor
-    public ContactsAdapter(Context context, List<MainMenuItem> menuItems) {
+    public MainMenuAdapter(Context context, List<MainMenuItem> menuItems) {
         mMenuItem = menuItems;
         mContext = context;
     }
