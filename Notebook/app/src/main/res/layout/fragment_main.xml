@@ -7,6 +7,7 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/mainMenuList"></android.support.v7.widget.RecyclerView>
+        android:id="@+id/mainMenuList"
+        android:layoutAnimation="@anim/card_layout_animation"></android.support.v7.widget.RecyclerView>
 
 </FrameLayout>
