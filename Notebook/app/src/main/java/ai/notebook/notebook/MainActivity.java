@@ -1,5 +1,7 @@
 package ai.notebook.notebook;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -96,20 +98,33 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Context context = this.getBaseContext();
+        if (id == R.id.nav_universes) {
 
-//        if (id == R.id.nav_camera) {
-//            // Handle the camera action
-//        } else if (id == R.id.nav_gallery) {
-//
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
+        } else if (id == R.id.nav_characters) {
+            Intent intent = new Intent(context,CharacterListActivity.class);
+            startActivity(intent);
+
+
+        } else if (id == R.id.nav_locations) {
+
+        } else if (id == R.id.nav_items) {
+
+        } else if (id == R.id.nav_creatures) {
+
+        } else if (id == R.id.nav_races) {
+
+        } else if (id == R.id.nav_religions) {
+
+        } else if (id == R.id.nav_groups) {
+
+        } else if (id == R.id.nav_magics) {
+
+        } else if (id == R.id.nav_languages) {
+
+        } else if (id == R.id.nav_scenes) {
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

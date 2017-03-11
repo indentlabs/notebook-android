@@ -19,8 +19,27 @@
             </intent-filter>
         </activity>
         <!-- This has to include the theme NoActionBar so that the toolbar connects to the nav drawer pullout properly -->
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CharacterListActivity"
+            android:label="@string/title_character_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ai.notebook.notebook.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CharacterDetailActivity"
+            android:label="@string/title_character_detail"
+            android:parentActivityName=".CharacterListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ai.notebook.notebook.CharacterListActivity" />
+        </activity>
     </application>
 
 </manifest>
